@@ -87,8 +87,15 @@
   <input type="date" id="fechainicio">
   <h2>Fecha de Salida</h2>
   <input type="date" id="fechafin">
-<BR></BR>
+  <br>
+   <br>
+   <button onclick="calcularDias()" class="btn btn-success">Enviar</button>
+<br>
+<h2>Días de hospitalización</h2>
+<div id="espacio_dias"></div>
+<br>
   <button onclick="facturaPDF()" class="btn btn-success">Obtener Factura</button>
+  <br>
 
 </div>
 
@@ -197,5 +204,6 @@
 <script src="reloj.js"></script>
 <script src="ajustes.js"></script>
 <script src="obtenerFactura.js"></script>
+<script src="calcularDias.js"></script>
 <script src="jsPDF-1.3.2\dist\jspdf.min.js"></script>
 </html>

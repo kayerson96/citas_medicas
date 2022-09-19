@@ -24,7 +24,7 @@ documentoPDF.setFontSize(15);
 documentoPDF.text(70, 40, 'Paciente: ' + nombre);
 documentoPDF.setFontSize(10);
 documentoPDF.text(20, 50, 'Tipo de Documento: ' + tipo_documento);
-documentoPDF.text(20, 60, 'Número de documento: ' + numero_documento);
+documentoPDF.text(40, 50, 'Número de documento: ' + numero_documento);
 documentoPDF.text(20, 70, 'Motivo de Hospitalización: ' + motivo_hospitalizacion);
 documentoPDF.text(20, 80, 'Cuenta con Sisben: ' + siSisben);
 documentoPDF.text(20, 90, 'Fecha de Ingreso ' + fechainicio); 
