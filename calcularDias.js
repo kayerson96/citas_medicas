@@ -10,28 +10,13 @@ function calcularDias() {
     }else{
         let fechaResultado= fechafin - fechainicio;
         let days = Math.floor((fechaResultado)/(1000*60*60*24))+1;
-        alert(days)
+        alert(days);
+        return days;
     }
- 
-
-    // let espacioDias = document.getElementById('espacio_dias').value;
-    // let resta = fechafin.getTime() - fechainicio.getTime();
-    // alert(resta);
-
-    // function convertirTime(duration) {
-    //     var milliseconds = resta;
-    //     seconds= Math.floor((duration / 1000) % 60),
-    //     minutes= Math.floor((duration / (1000 * 60)) % 60),
-    //     hours= Math.floor((duration / (1000 * 60 * 60)) % 24);
-
-    // hours = (hours <10) ? "0" + hours: hours;
-    // minutes = (minutes < 10) ? "0" + minutes: minutes;
-    // seconds = (seconds < 10) ? "0" + seconds: seconds;
-
-    // return hours +":" + minutes + ";" + seconds + "." + milliseconds;
-    // }
-    // alert(convertirTime(resta))
-    // alert(fechainicio);
-    // alert(fechafin);
-
+}
+function calcularValor (days) {
+    let valor = 75000;
+    let subtotal = valor*days;
+    alert(subtotal);
+    return subtotal;
 }
