@@ -91,12 +91,27 @@
             A  
           </label>
         </div>
+
           <div class="form-check ">
             <input class="form-check-input" type="radio" name="exampleRadios" id="esteesB" value="B" checked>
             <label class="form-check-label" for="exampleRadios1">
             B
           </label>
         </div>
+
+        <div class="form-check ">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="esteesC" value="C" checked>
+          <label class="form-check-label" for="exampleRadios1">
+          C
+        </label>
+      </div>
+
+      <div class="form-check ">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="esteesD" value="D" checked>
+        <label class="form-check-label" for="exampleRadios1">
+        D
+      </label>
+    </div>
     </div>
       </label>
  <div class="container01">
@@ -106,12 +121,18 @@
   <input type="date" id="fechafin">
   <br>
    <br>
-   <button onclick="calcularDias()" class="btn btn-success">Enviar</button>
+   <button onclick="calcularDias()" class="btn btn-success">Días hospitalizacion</button>
 <br>
-<div id="espacio_dias"></div>
+<br>
+<button onclick="calcularValor()" class="btn btn-success">Calcular Factura</button>
+            <H3>Monto a Facturar:</H3>
+        <div class="payTotal container">
+          <div id="espacio_dias">Monto a Pagar</div>
+          <div class="container"id="totalGeneral">Total</div>
+        </div>
 </div>
-<br>
-  <button onclick="facturaPDF()" class="btn btn-success">Obtener Factura</button>
+  <button onclick="facturaPDF()" class="btn btn-primary">Obtener Factura</button>
+  <br>
   <br>
 
 </div>

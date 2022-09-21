@@ -4,5 +4,27 @@
 }
 .container01 {
     background-color: aquamarine;
-    margin: 90px;
+    margin: 60px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    height: 480px;
+    padding: 5px;
 }
+
+                .payTotal {
+                    background-color: #81AFDD;
+                    width: 200px;
+                    height: 50px;
+                    padding: 10px;
+
+                }
+
+                #totalGeneral{
+                    margin-top: 50px;
+                    width: 150px;
+                    height: 70px;
+                    padding: 10px;
+                    background-color: #81AFDD; 
+                    color: red; 
+                }
