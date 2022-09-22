@@ -1,10 +1,9 @@
+
 function calcularDias() {
     var fechainicio = new Date(document.getElementById('fechainicio').value);
     var fechafin =  new Date(document.getElementById('fechafin').value);
     if (fechainicio >= fechafin){
         alert("la información indicada no es correcto, validar fecha de ingreso")
-        // fechainicio.value="";
-        // fechafin.value="";
         document.getElementById("fechainicio").value="";
         document.getElementById("fechafin").value="";
     }else{
@@ -16,7 +15,8 @@ function calcularDias() {
 
     
 }
-function calcularValor () {
+function calcularValor() {
+
 let esteesA = document.getElementById("esteesA");
 let esteesB = document.getElementById("esteesB");
 
@@ -27,13 +27,15 @@ let days= calcularDias();
         if (esteesA.checked == true || esteesB.checked == true){    
             descuentoSisben=35
          }
-         let Total= ( subtotal-(subtotal*35)/100);
+         Total= ( subtotal-(subtotal*35)/100);
          console.log(Total)
 
-    document.getElementById("espacio_dias").innerHTML ="Sub-Total "+subtotal + "COP";
+    document.getElementById("espacio_dias").innerHTML="Sub-Total "+subtotal + "COP";
     alert("Sub-Total "+subtotal + "COP");
+
+
     document.getElementById("totalGeneral").innerHTML ="Total a Pagar "+Total+ "COP";
-    return subtotal + Total; 
+    return Total;
 
-
+   
 }

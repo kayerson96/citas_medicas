@@ -1,3 +1,5 @@
+
+
 function facturaPDF() {
     let nombre = document.getElementById('nombre_completo').value;
     let tipo_documento= document.getElementById('tipodedocumento').value;
@@ -5,8 +7,7 @@ function facturaPDF() {
     let motivo_hospitalizacion = document.getElementById('hospitalizacion').value;
     let fechainicio = document.getElementById('fechainicio').value;
     let fechaFin = document.getElementById('fechafin').value;
-
-
+    let subtotal = document.getElementById("espacio_dias");
 
     let GrupoA= document.getElementById('esteesA');
     let GrupoB= document.getElementById('esteesB');
@@ -44,7 +45,6 @@ function facturaPDF() {
                                         
     console.log(grupoPertenece)
 
-
 let documentoPDF = new jsPDF();
 documentoPDF.setFontSize(20);
 documentoPDF.text(70, 15, 'Factura por Hospitalización');
@@ -60,8 +60,7 @@ documentoPDF.text(20, 70, 'Cuenta con Sisben: ' + siSisben);
 documentoPDF.text(80, 70, 'Grupo al que Pertenece: ' + grupoPertenece);
 documentoPDF.text(20, 80, 'Fecha de Ingreso ' + fechainicio); 
 documentoPDF.text(80, 80, 'Fecha de Salida ' + fechaFin); 
-documentoPDF.text(90, 0, 'Fecha de Salida ' + fechaFin); 
-
+documentoPDF.text(80, 100, 'Valor a pagar ' + calcularValor()); 
 documentoPDF.save('Factura_Hospitalizacion');
 
 }
