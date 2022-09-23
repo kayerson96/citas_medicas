@@ -49,6 +49,8 @@ function facturaPDF() {
     let fechainicio = document.getElementById('fechainicio').value;
     let fechaFin = document.getElementById('fechafin').value;
     let subtotal = document.getElementById("espacio_dias");
+    let horaIngreso = document.getElementById("horaIngreso").value;
+    let horaSalida = document.getElementById("horaSalida").value;
 
     let GrupoA= document.getElementById('esteesA');
     let GrupoB= document.getElementById('esteesB');
@@ -99,9 +101,11 @@ documentoPDF.text(90, 50, 'Número de documento: ' + numero_documento);
 documentoPDF.text(60, 60, 'Motivo de Hospitalización: ' + motivo_hospitalizacion);
 documentoPDF.text(20, 70, 'Cuenta con Sisben: ' + siSisben); 
 documentoPDF.text(80, 70, 'Grupo al que Pertenece: ' + grupoPertenece);
-documentoPDF.text(20, 80, 'Fecha de Ingreso ' + fechainicio); 
+documentoPDF.text(20, 80, 'Fecha de Ingreso: ' + fechainicio);
+documentoPDF.text(20, 90, 'Hora de Ingreso: ' + horaIngreso);  
 documentoPDF.text(60, 160, 'Gracias por confiar tu Salud con Nosotros'); 
-documentoPDF.text(80, 80, 'Fecha de Salida ' + fechaFin); 
+documentoPDF.text(80, 80, 'Fecha de Salida: ' + fechaFin); 
+documentoPDF.text(80, 90, 'Hora de Salida: ' + horaSalida);
 documentoPDF.setFontSize(20);
 documentoPDF.setTextColor(129, 175, 221)
 documentoPDF.text(60, 140, 'Sub-Total: ' + subtotal1 + "COP"); 
