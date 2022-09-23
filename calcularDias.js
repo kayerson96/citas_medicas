@@ -84,8 +84,6 @@ function facturaPDF() {
     var resultadosemifinal = calcularDias()
    subtotal1= 75000*resultadosemifinal;
 
-   var imgData = '../'
-
 let documentoPDF = new jsPDF();
 documentoPDF.setFontSize(30);
 documentoPDF.text(40, 15, 'Factura por Hospitalización');
